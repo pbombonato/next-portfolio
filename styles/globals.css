@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer {
+  .header-hero-container {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    min-height: 100vh;
+  }
+
+  .text-gradient {
+    background: linear-gradient(
+      110.94deg,
+      #b16cea 27.31%,
+      #ff5e69 43.39%,
+      #ff8a56 58.49%,
+      #ffa84b 74.08%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding-bottom: 1.5vh;
+  }
+}
